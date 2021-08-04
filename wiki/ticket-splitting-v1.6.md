@@ -15,51 +15,7 @@ Thanks to u/Inaccurate- for [writing](https://www.reddit.com/r/decred/comments/m
 
 ## Does it still work?
 
-Yes, as of writing (March 2021) buying partial tickets is still possible.
-
-## How do I split tickets now?
-
-It is currently possible if the following conditions are met:
-
-- Decrediton (GUI) or dcrwallet (command-line) must be of v1.5 series
-- the VSP must be of "legacy" type
-- the VSP must support ticket splitting
-
-In other words, it will _not_ work with v1.6 software, and it will _not_ work with VSPs of the new "vspd" type.
-
-You can get the latest v1.5 software [here](https://github.com/decred/decred-binaries/releases/tag/v1.5.2), which is v1.5.2 (released Aug 2020).
-
-And then you need a compatible VSP. Three are known to support ticket splitting:
-
-- [99split.com](https://99split.com/)
-- [decredvoting.com](https://decredvoting.com/)
-- [stake.decredbrasil.com](https://stake.decredbrasil.com/)
-
-Finally, you also need other people to buy a full ticket as a group. Of the three VSPs above, only decredvoting.com is having _active sessions_ recently. It also has extra features like detailed [notifications](https://www.reddit.com/r/decred/comments/9x4f9a/decredvotingcom_now_sending_splitticket_purchase/) and a monitoring [dashboard](https://www.reddit.com/r/decred/comments/hbofz4/tired_of_keeping_track_of_your_staking_activities/).
-
-You can see splitting sessions for all VSPs on [this page](https://mainnet-split-tickets.matheusd.com/) (links are outdated but the monitoring should work), or [this one](https://macelai.github.io/decred-split-stakepools/) by another developer.
-
-This document covers the status of ticket splitting in v1.6 but it's not a tutorial - see [this page](https://decredvoting.com/ticketsplitting) for a good entry point with all instructions linked, and then you can connect with other users in [@dcrtktsplit](https://t.me/dcrtktsplit) Telegram or [#ticketsplitting](https://chat.decred.org/#/room/#ticketsplitting:decred.org) on Matrix.
-
-Note: Here we only talk about _VSP staking_, because users who can [solo](https://docs.decred.org/advanced/solo-proof-of-stake-voting/) stake likely don't need ticket splitting.
-
-## Can I downgrade from v1.6?
-
-No. If you have upgraded to v1.6, the only way to use ticket splitting again is to install v1.5, re-download the blockchain and re-create the wallet from seed.
-
-Installing Decrediton v1.5 in parallel with v1.6 may be hard for non-expert users. All config files (including the wallet db) are (OS-)user global, so only a single install of Decrediton can run for a given operating system user. It should be possible to have multiple OS users and use different version for each. Or use multiple devices.
-
-Decrediton uses dcrd to handle the chain and dcrwallet to handle the wallet.
-
-Release notes for [dcrd v1.6](https://github.com/decred/decred-binaries/releases/tag/v1.6.0#dcrd-v160) warn: once blockchain data is migrated to new version there is no going back without re-downloading it with v1.5.
-
-dcrwallet v1.6 also does a one-way migration of the wallet file and older versions will not work with it.
-
-## Will it break? When?
-
-Yes. The software stack that currently supports ticket splitting will stop working around **May 7, 2021** when v1.5 will stop syncing.
-
-Legacy VSPs should still vote any split tickets bought before that date, but it will not be possible to purchase new split tickets with v1.5, because it will not sync. More technical details [here](https://chat.decred.org/#/room/!zefvTnlxYHPKvJMThI:decred.org/$OsFGKqqDYnWER-HPuoaqDDvO0b4FzHanXU7UuEntCZo).
+No, as of writing (August 2021) buying partial tickets is **not** currently possible.
 
 ## What is ticket splitting again?
 
